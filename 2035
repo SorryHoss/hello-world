@@ -1,0 +1,10 @@
+while True:
+
+    print("How old are you?")
+    age = input()
+    age = int (age)
+    if age > 100:
+        print("Under 100 please!")
+        continue
+    else:
+        print("In 2035 you will be" , 17 + age , "years old" )
