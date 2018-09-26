@@ -3,7 +3,7 @@ import random
 play="y"
 
 print(".\nWhat is your Name?")
-player=input(">")
+player=input("")
 while play=="y":
     print("Let's play a game!\nGuess what fruit I am thinking of, "+player+"!")
     fruit=random.choice(["orange","apple","pear","peach","grape"])
@@ -11,13 +11,13 @@ while play=="y":
         ana="an"
     if fruit=="pear":
         ana="a"
-    answer=input(">")
+    answer=input("")
     answer=answer.lower()
     if answer!=fruit:
         print("Wrong.  I was thinking of "+ana+" "+fruit+".")
     else:
         print("Correct!")
-    play=input("Play again? yes or no\n>")
+    play=input("Play again? yes or no\n")
     play=play.lower()
     if play=="yes":
         play="y"
